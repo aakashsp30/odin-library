@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <span class="logo-label">Personal Collection</span>
+            <h1>My <em>Library</em></h1>
+            <p class="stats" id="stats">0 books &nbsp;.&nbsp; 0 read</p>
+        </div>
+        <button id="new-book-btn">+ New Book</button>
+    </header>
+
+    <main>
+        <div id="library-grid">
+            <div id="empty-state">
+                <p>Your shelves await.</p>
+                <p>Add your first book to get started.</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal-overlay">
+        <div id="modal">
+            <div class="modal-header">
+                <h2 id="modal-title">Add a Book</h2>
+                <button id="modal-close">X</button>
+            </div>
+
+            <div class="form-group">
+                <label for="input-title">Title</label>
+                <input type="text" id="input-title" placeholder="e.g. Crime and Punishment">
+            </div>
+
+            <div class="form-group">
+                <label for="input-author">Author</label>
+                <input type="text" id="input-author" placeholder="e.g. Fyodor Dostoevsky" />
+            </div>
+
+            <div class="form-group">
+                <label for="input-pages">Pages</label>
+                <input type="number" id="input-pages" placeholder="e.g. 512" min="1" />
+            </div>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="input-read" />
+                <label for="input-read">I've already read this book</label>
+            </div>
+
+            <button id="form-submit">Add to Library</button>
+        </div>
+    </div>
+</body>
+</html>

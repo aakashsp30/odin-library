@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: #f5f0e8;
+    color: #1a1208;
+    min-height: 100vh;
+    background-image:
+        radial-gradient(ellipse at 20% 10%, rgba(180,140,80,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 90%, rgba(46,83,57,0.07) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23f5f0e8'/%3E%3Ccircle cx='1' cy='1' r='0.6' fill='%23d4b896' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+header {
+    padding: 3rem 4rem 2rem;
+    border-bottom: 2px solid #1a1208;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.logo-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #7a5c2e;
+}
+
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    line-height: 1;
+    color: #1a1208;
+}
+
+h1 em {
+    font-style: italic;
+    color: #7a5c2e;
+}
+
+.stats {
+    font-size: 0.7rem;
+    color: #7a5c2e;
+    letter-spacing: 0.1em;
+    margin-top: 0.4rem;
+}
+
+#new-book-btn {
+    font-family: monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.9rem 1.8rem;
+    background: #1a1208;
+    color: #f5f0e8;
+    border: 2px solid #1a1208;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    flex-shrink: 0;
+}
+
+#new-book-btn:hover {
+    background: #7a5c2e;
+    background-color: #7a5c2e;
+}
+
+main {
+    padding: 3rem 4rem;
+}
+
+#library-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+#empty-state {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 5rem 2rem;
+    border: 2px dashed #ede4d0;
+    color: #7a5c2e;
+}
+
+#empty-state p:first-child {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+#empty-state p:last-child {
+    font-size: 0.72rem;
+    letter-spacing: 0.1rem;
+}
