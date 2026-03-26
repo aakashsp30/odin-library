@@ -105,3 +105,84 @@ main {
     font-size: 0.72rem;
     letter-spacing: 0.1rem;
 }
+
+.book-card {
+    background: #ede4d0;
+    border: 1px solid rgba(26, 18, 8, 0.18);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    position: relative;
+}
+
+.book-card:hover {
+    box-shadow: 0 8px 24px rgba(26,18,8,0.15);
+}
+
+.book-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 5px;
+    background: #7a5c2e;
+}
+
+.book-card.read::before {
+    background: #2e5339;
+}
+
+.book-card.unread::before {
+    background: #c0392b;
+}
+
+.book-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.15rem;
+    line-height: 1.25;
+    color: #1a1208;
+    padding-left: 0.5rem;
+}
+
+.book-author {
+    font-size: 0.72rem;
+    color: #7a5c2e;
+    letter-spacing: 0.08em;
+    padding-left: 0.5rem;
+}
+
+.book-meta {
+    padding-left: 0.5rem;
+    font-size: 0.68rem;
+    color: #3d2f14;
+    letter-spacing: 0.06em;
+    border-top: 1px solid rgba(26,18,8,0.1);
+    padding-top: 0.6rem;
+}
+
+.read-badge {
+    display: inline-block;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid;
+    margin-left: 0.5rem;
+}
+
+.read-badge.read {
+    color: #2e5339;
+    border-color: #2e5339;
+}
+
+.read-badge.unread {
+    color: #c0392b;
+    border-color: #c0392b;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+    margin-top: auto;
+}

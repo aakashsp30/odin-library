@@ -77,3 +77,5 @@ function escHtml(str) {
     d.textContent = str;
     return d.innerHTML;
 }
+
+renderLibrary();
