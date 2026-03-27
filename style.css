@@ -186,3 +186,153 @@ main {
     padding-left: 0.5rem;
     margin-top: auto;
 }
+
+.btn-toggle, .btn-remove {
+    font-family: monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+    border: 1.5px solid;
+    background: transparent;
+    transition: background 0.15s, color 0.15s;
+}
+
+.btn-toggle {
+    color: #2e5339;
+    border-color: #2e5339;
+}
+
+.btn-toggle:hover {
+    background: #2e5339;
+    color: #f5f0e8;
+}
+
+.btn-remove {
+    background: #c0392b;
+    border-color: #c0392b;
+}
+
+.btn-remove:hover {
+    background: #c0392b;
+    color: #f5f0e8;
+}
+
+#modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 18, 8, 0.55);
+    backdrop-filter: blur(2px);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-overlay.open {
+    display: flex;
+}
+
+#modal {
+    background: #f5f0e8;
+    border: 2px solid #1a1208;
+    padding: 2.5rem;
+    width: min(480px, 92vw);
+    min-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-bottom: 1.5px solid #1a1208;
+    padding-bottom: 1rem;
+}
+
+.modal-header h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+}
+
+#modal-close {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #7a5c2e;
+    line-height: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+}
+
+label {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #7a5c2e;
+}
+
+input[type="text"], input[type="number"], select {
+    font-family: monospace;
+    font-size: 0.85rem;
+    padding: 0.65rem 0.85rem;
+    background: #ede4d0;
+    border: 1.5px solid rgba(26, 18, 8, 0.25);
+    color: #1a1208;
+    outline: none;
+    transition: border-color 0.15s;
+    width: 100%;
+}
+
+input:focus, select:focus {
+    border-color: #7a5c2e;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.8rem;
+}
+
+.checkbox-row input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: #2e5339;
+    cursor: pointer;
+}
+
+.checkbox-row label {
+    font-size: 0.75rem;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+#form-submit {
+    font-family: monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.95rem 2rem;
+    background: #1a1208;
+    color: #f5f0e8;
+    border: 2px solid #1a1208;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+#form-submit:hover {
+    background: #7a5c2e;
+    border-color: #7a5c2e;
+}
