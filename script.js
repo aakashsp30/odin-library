@@ -83,10 +83,6 @@ document.getElementById('library-grid').addEventListener('click', e=> {
     if(!id) return;
 
     if(e.target.classList.contains('btn-remove')){
-        const card = e.target.closest('.book-card');
-        card.style.transition = 'opacity 0.25s, transform 0.25s';
-        card.style.opacity = '0';
-        card.style.transform = 'scale(0.95)';
         setTimeout(()=> {
             removeBookFromLibrary(id);
             renderLibrary();
