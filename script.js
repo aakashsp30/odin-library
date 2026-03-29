@@ -53,7 +53,7 @@ function renderLibrary() {
             <span class="read-badge ${book.read ? 'read' : 'unread'}">${book.read ? 'Read' : 'Unread'}</span>
           </div>
           <div class="book-meta">
-            <span>📖 ${book.pages ? book.pages + ' pp.' : '—'}</span>
+            <span>📖 ${book.pages ? book.pages + ' pages' : '—'}</span>
           </div>
           <div class="card-actions">
             <button class="btn-toggle" data-id="${book.id}">${book.read ? 'Mark Unread' : 'Mark Read'}</button>

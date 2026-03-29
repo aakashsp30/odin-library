@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: monospace;
+    font-family: 'DM Mono', monospace;
     background-color: #f5f0e8;
     color: #1a1208;
     min-height: 100vh;
@@ -58,7 +58,7 @@ h1 em {
 }
 
 #new-book-btn {
-    font-family: monospace;
+    font-family: 'DM Mono', monospace;
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -67,13 +67,12 @@ h1 em {
     color: #f5f0e8;
     border: 2px solid #1a1208;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
     flex-shrink: 0;
 }
 
 #new-book-btn:hover {
     background: #7a5c2e;
-    background-color: #7a5c2e;
+    border-color: #7a5c2e;
 }
 
 main {
@@ -188,7 +187,7 @@ main {
 }
 
 .btn-toggle, .btn-remove {
-    font-family: monospace;
+    font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -196,7 +195,6 @@ main {
     cursor: pointer;
     border: 1.5px solid;
     background: transparent;
-    transition: background 0.15s, color 0.15s;
 }
 
 .btn-toggle {
@@ -210,7 +208,7 @@ main {
 }
 
 .btn-remove {
-    background: #c0392b;
+    color: #c0392b;
     border-color: #c0392b;
 }
 
@@ -282,14 +280,13 @@ label {
 }
 
 input[type="text"], input[type="number"], select {
-    font-family: monospace;
+    font-family: 'DM Mono', monospace;
     font-size: 0.85rem;
     padding: 0.65rem 0.85rem;
     background: #ede4d0;
     border: 1.5px solid rgba(26, 18, 8, 0.25);
     color: #1a1208;
     outline: none;
-    transition: border-color 0.15s;
     width: 100%;
 }
 
@@ -319,7 +316,7 @@ input:focus, select:focus {
 }
 
 #form-submit {
-    font-family: monospace;
+    font-family: 'DM Mono', monospace;
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -329,7 +326,6 @@ input:focus, select:focus {
     border: 2px solid #1a1208;
     cursor: pointer;
     width: 100%;
-    transition: background 0.2s;
 }
 
 #form-submit:hover {
