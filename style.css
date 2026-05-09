@@ -332,3 +332,13 @@ input:focus, select:focus {
     background: #7a5c2e;
     border-color: #7a5c2e;
 }
+
+input.invalid {
+    border-color: #c0392b;
+    background: rgba(192,57,43,0.05);
+}
+
+.field-error {
+    font-size: 0.65rem;
+    color: #c0392b;
+}
